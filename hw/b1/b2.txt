@@ -1,0 +1,15 @@
+Đoạn code trên nhằm in các chữ số của số n theo thứ tự ngược lại, nhưng sai ở điều kiện kiểm tra chữ số cuối và phép chia làm tròn
+Cần sửa:
+Thay if (m / 10 == 0) thành if m < 10 để kiểm tra chữ số cuối đúng cách.
+Thay m /= 10 bằng m //= 10 để đảm bảo chia nguyên, tránh chuyển thành số thực.
+
+
+Code sau khi sửa:
+n = 123456
+m = n
+while m > 0:
+    if m < 10:
+        print(m % 10, end="")
+    else:
+        print(m % 10, end=", ")
+    m //= 10

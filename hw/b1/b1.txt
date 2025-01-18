@@ -1,0 +1,6 @@
+Bài tập 1:
+Các cách khai báo dữ liệu chính xác trong python là:
+b) x = None
+d) x, y = 10, 10
+f) x = y = 10
+g) pi = 3.14
